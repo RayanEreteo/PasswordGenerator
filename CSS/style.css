@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1{
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    margin-top: 40px;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    color: white;
+    text-align: center;
+}
+
+body{
+    background: #363131;
+    
+}
+
+.main-container,
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    background: #474343;
+    max-width: 500px;
+    min-height: 400px;
+    margin: 0 auto;
+    border-radius: 60px;
+    flex-direction: column;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 390px;
+}
+
+.pass-output{
+    width: 350px;
+    height: 2rem;
+    border: 3px solid #363131;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+    background: #363131;
+    border-radius: 9px;
+    transition: all 0.2s linear;
+    text-align: center;
+    color: white;
+}
+
+.pass-output::placeholder{
+    font-size: 15px;
+    color: white;
+}
+
+.pass-output:hover{
+    -webkit-box-shadow: 5px 5px 15px 5px #a8a5a5;
+    box-shadow: 5px 5px 15px 5px #a8a5a5;
+}
+
+.pass-output:focus{
+    outline: none;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.2s linear;
+    font-size: 0.9rem;
+    color: white;
+    word-wrap: break-word;
+}
+
+a{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.2s linear;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+}
+
+a:hover{
+    background: rgba(255, 0, 0, 0.6);
+}
+
+button:hover{
+    background: rgba(255, 0, 0, 0.6);
+}
+
+.info-text{
+    opacity: 0.6;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.pass-length-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin-top: 40px;
+    color: white;
+
+}
+
+.pass-length-container > *{
+    margin: 9px;
+}
+
+#pass-length-valuenumber{
+    width: 50px;
+    margin-left: 2rem;
+}
+
+label{
+    color: white;
+}
+
+@media screen and (max-width: 795px){
+    h1{
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+    h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .pass-output{
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+}

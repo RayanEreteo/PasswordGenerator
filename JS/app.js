@@ -14,8 +14,8 @@ sliderValue.innerHTML = slider.value;
 
 //LISTENERS
 
-generate.addEventListener('click', generatePass);
-output.addEventListener('click', copyPass);
+$('#generate').click(generatePass)
+$(".pass-output").click(copyPass);
 slider.addEventListener('input', function(){
         sliderValue.innerHTML = slider.value;
 })
@@ -42,7 +42,7 @@ function generatePass(e){
 }
 
 function copyPass(){
-        //Copy the the generated password to clipboard and change the info text
+        //Copy the generated password to clipboard and change the info text
         navigator.clipboard.writeText(generatedPassword);
         textCopyInfo.innerHTML = "Password copied !";
         //Make a null variable that will contain a timer
